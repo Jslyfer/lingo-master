@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Lingo-Master",
+    "description": "Google Chrome extension of a text translation for cultural lingos and jargon.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
